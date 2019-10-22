@@ -1,1 +1,15 @@
-a
+spring:
+  profiles:
+    active: 
+    - dev
+
+---
+spring:
+  profiles: dev
+  application:
+    name: microsoftcloud-config-dev
+---
+spring:
+  profiles: test
+  application:
+    name: microsoftcloud-config.test
